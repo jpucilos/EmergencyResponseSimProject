@@ -1,0 +1,41 @@
+file 1744 1524029621                                            
+version 2
+run General-0-20180418-01:33:31-9020
+attr configname General
+attr datetime 20180418-01:33:31
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network EmergencyResponse
+attr processid 9020
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.NYC_calls.interArrivalTime exponential(20s)
+param **.NYC_calls.numJobs 10
+param **.responder1.serviceTime exponential(60s)
+param **.responder2.serviceTime exponential(60s)
+param **.responder3.serviceTime exponential(60s)
+param **.ambulance1.serviceTime exponential(120s)
+param **.ambulance2.serviceTime exponential(120s)
+param **.ambulance3.serviceTime exponential(120s)
+param **.ambulance4.serviceTime exponential(60s)
+
+vector 0 EmergencyResponse.ambulance_queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 EmergencyResponse.call_queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 2 EmergencyResponse.Hospital lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+0	1234 109 0 38 0 176.528230148001 5 0 1 2 2
+1	1343 9 0 0 0 0 1 0 0 0 0
+2	1352 390 34 81 157.399153974596 542.454755022683 10 65.950073527568 401.29255373698 1394.1265681275 278569.65549685
+

@@ -1,0 +1,135 @@
+version 2
+run General-0-20180418-01:33:31-9020
+attr configname General
+attr datetime 20180418-01:33:31
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network EmergencyResponse
+attr processid 9020
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.NYC_calls.interArrivalTime exponential(20s)
+param **.NYC_calls.numJobs 10
+param **.responder1.serviceTime exponential(60s)
+param **.responder2.serviceTime exponential(60s)
+param **.responder3.serviceTime exponential(60s)
+param **.ambulance1.serviceTime exponential(120s)
+param **.ambulance2.serviceTime exponential(120s)
+param **.ambulance3.serviceTime exponential(120s)
+param **.ambulance4.serviceTime exponential(60s)
+
+scalar EmergencyResponse.NYC_calls created:last 10
+attr interpolationmode none
+attr title "the number of jobs created, last"
+scalar EmergencyResponse.Hospital generation:mean 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, mean"
+scalar EmergencyResponse.Hospital generation:max 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, max"
+scalar EmergencyResponse.Hospital delaysVisited:mean 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, mean"
+scalar EmergencyResponse.Hospital delaysVisited:max 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, max"
+scalar EmergencyResponse.Hospital queuesVisited:mean 0.4
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, mean"
+scalar EmergencyResponse.Hospital queuesVisited:max 2
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, max"
+scalar EmergencyResponse.Hospital totalServiceTime:mean 138.34417965612
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, mean"
+attr unit s
+scalar EmergencyResponse.Hospital totalServiceTime:max 401.29255373698
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, max"
+attr unit s
+scalar EmergencyResponse.Hospital totalDelayTime:mean 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, mean"
+attr unit s
+scalar EmergencyResponse.Hospital totalDelayTime:max 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, max"
+attr unit s
+scalar EmergencyResponse.Hospital totalQueueingTime:mean 1.0684771566293
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, mean"
+attr unit s
+scalar EmergencyResponse.Hospital totalQueueingTime:max 6.557788278301
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, max"
+attr unit s
+scalar EmergencyResponse.Hospital lifeTime:mean 139.41265681275
+attr interpolationmode none
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar EmergencyResponse.Hospital lifeTime:max 401.29255373698
+attr interpolationmode none
+attr title "lifetime of arrived jobs, max"
+attr unit s
+scalar EmergencyResponse.responder1 busy:timeavg 0.42727834613665
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar EmergencyResponse.responder2 busy:timeavg 0.42445113949114
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar EmergencyResponse.responder3 busy:timeavg 0.18637705501224
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar EmergencyResponse.ambulance_queue queueingTime:mean 5.3423857831465
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar EmergencyResponse.ambulance_queue queueingTime:max 6.557788278301
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar EmergencyResponse.ambulance_queue queueLength:timeavg 0.019697074211924
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar EmergencyResponse.ambulance_queue queueLength:max 1
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar EmergencyResponse.ambulance_queue dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar EmergencyResponse.ambulance1 busy:timeavg 0.73331364488594
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar EmergencyResponse.ambulance2 busy:timeavg 0.21429922249562
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar EmergencyResponse.ambulance3 busy:timeavg 0.28337462880962
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar EmergencyResponse.ambulance4 busy:timeavg 0.28124179072244
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar EmergencyResponse.call_queue queueingTime:mean nan
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar EmergencyResponse.call_queue queueingTime:max nan
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar EmergencyResponse.call_queue queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar EmergencyResponse.call_queue queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar EmergencyResponse.call_queue dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+
