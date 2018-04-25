@@ -1,14 +1,14 @@
 version 2
-run General-0-20180425-14:53:36-13588
+run General-0-20180425-13:57:18-11132
 attr configname General
-attr datetime 20180425-14:53:36
+attr datetime 20180425-13:57:18
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network EmergencyResponse
-attr processid 13588
+attr processid 11132
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -18,10 +18,10 @@ param **.NYC_calls.interArrivalTime exponential(20s)
 param **.responder_array[*].serviceTime exponential(60s)
 param **.ambulance_array[*].serviceTime exponential(1020s)
 param **.c1 6
-param **.c2 60
+param **.c2 61
 param **.NYC_calls.stopTime 604800s
 
-scalar EmergencyResponse.NYC_calls created:last 30126
+scalar EmergencyResponse.NYC_calls created:last 30384
 attr interpolationmode none
 attr title "the number of jobs created, last"
 scalar EmergencyResponse.Hospital generation:mean 0
@@ -36,13 +36,13 @@ attr title "the total number of delays visited by arrived jobs, mean"
 scalar EmergencyResponse.Hospital delaysVisited:max 0
 attr interpolationmode none
 attr title "the total number of delays visited by arrived jobs, max"
-scalar EmergencyResponse.Hospital queuesVisited:mean 0.389298280555
+scalar EmergencyResponse.Hospital queuesVisited:mean 0.43773038441285
 attr interpolationmode none
 attr title "the total number of queues visited by arrived jobs, mean"
 scalar EmergencyResponse.Hospital queuesVisited:max 4
 attr interpolationmode none
 attr title "the total number of queues visited by arrived jobs, max"
-scalar EmergencyResponse.Hospital totalServiceTime:mean 1066.7765221073
+scalar EmergencyResponse.Hospital totalServiceTime:mean 1071.7375646758
 attr interpolationmode none
 attr title "the total time spent  by arrived jobs, mean"
 attr unit s
@@ -58,15 +58,15 @@ scalar EmergencyResponse.Hospital totalDelayTime:max 0
 attr interpolationmode none
 attr title "the total time spent in delay nodes by arrived jobs, max"
 attr unit s
-scalar EmergencyResponse.Hospital totalQueueingTime:mean 9.2109822482427
+scalar EmergencyResponse.Hospital totalQueueingTime:mean 14.53085878669
 attr interpolationmode none
 attr title "the total time spent in queues by arrived jobs, mean"
 attr unit s
-scalar EmergencyResponse.Hospital totalQueueingTime:max 375.35750857914
+scalar EmergencyResponse.Hospital totalQueueingTime:max 534.87722003764
 attr interpolationmode none
 attr title "the total time spent in queues by arrived jobs, max"
 attr unit s
-scalar EmergencyResponse.Hospital lifeTime:mean 1075.9875043556
+scalar EmergencyResponse.Hospital lifeTime:mean 1086.2684234625
 attr interpolationmode none
 attr title "lifetime of arrived jobs, mean"
 attr unit s
@@ -74,236 +74,239 @@ scalar EmergencyResponse.Hospital lifeTime:max 12635.615833516
 attr interpolationmode none
 attr title "lifetime of arrived jobs, max"
 attr unit s
-scalar EmergencyResponse.responder_array[0] busy:timeavg 0.76064530660141
+scalar EmergencyResponse.responder_array[0] busy:timeavg 0.76188538533272
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.responder_array[1] busy:timeavg 0.67669020477264
+scalar EmergencyResponse.responder_array[1] busy:timeavg 0.6777093210282
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.responder_array[2] busy:timeavg 0.55935920648408
+scalar EmergencyResponse.responder_array[2] busy:timeavg 0.56844432406832
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.responder_array[3] busy:timeavg 0.43928555374549
+scalar EmergencyResponse.responder_array[3] busy:timeavg 0.44742937763627
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.responder_array[4] busy:timeavg 0.31127270720491
+scalar EmergencyResponse.responder_array[4] busy:timeavg 0.32102544963336
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.responder_array[5] busy:timeavg 0.20190473687137
+scalar EmergencyResponse.responder_array[5] busy:timeavg 0.20908914783527
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_queue queueingTime:mean 73.503148400176
+scalar EmergencyResponse.ambulance_queue queueingTime:mean 100.57084866602
 attr interpolationmode none
 attr title "queueing time at dequeue, mean"
 attr unit s
-scalar EmergencyResponse.ambulance_queue queueingTime:max 375.35750857914
+scalar EmergencyResponse.ambulance_queue queueingTime:max 534.87722003764
 attr interpolationmode none
 attr title "queueing time at dequeue, max"
 attr unit s
-scalar EmergencyResponse.ambulance_queue queueLength:timeavg 0.37840144071081
+scalar EmergencyResponse.ambulance_queue queueLength:timeavg 0.64110056085132
 attr interpolationmode sample-hold
 attr title "queue length, timeavg"
-scalar EmergencyResponse.ambulance_queue queueLength:max 22
+scalar EmergencyResponse.ambulance_queue queueLength:max 29
 attr interpolationmode sample-hold
 attr title "queue length, max"
 scalar EmergencyResponse.ambulance_queue dropped:count 0
 attr interpolationmode none
 attr title "drop event, count"
-scalar EmergencyResponse.call_queue queueingTime:mean 17.284762824169
+scalar EmergencyResponse.call_queue queueingTime:mean 18.546117430275
 attr interpolationmode none
 attr title "queueing time at dequeue, mean"
 attr unit s
-scalar EmergencyResponse.call_queue queueingTime:max 116.06419242273
+scalar EmergencyResponse.call_queue queueingTime:max 139.85053432711
 attr interpolationmode none
 attr title "queueing time at dequeue, max"
 attr unit s
-scalar EmergencyResponse.call_queue queueLength:timeavg 0.077566030975211
+scalar EmergencyResponse.call_queue queueLength:timeavg 0.084454694132018
 attr interpolationmode sample-hold
 attr title "queue length, timeavg"
-scalar EmergencyResponse.call_queue queueLength:max 8
+scalar EmergencyResponse.call_queue queueLength:max 11
 attr interpolationmode sample-hold
 attr title "queue length, max"
 scalar EmergencyResponse.call_queue dropped:count 0
 attr interpolationmode none
 attr title "drop event, count"
-scalar EmergencyResponse.ambulance_array[0] busy:timeavg 0.97831848173243
+scalar EmergencyResponse.ambulance_array[0] busy:timeavg 0.98036229190327
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[1] busy:timeavg 0.97853420529064
+scalar EmergencyResponse.ambulance_array[1] busy:timeavg 0.97717543515206
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[2] busy:timeavg 0.97342023409142
+scalar EmergencyResponse.ambulance_array[2] busy:timeavg 0.97414782347141
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[3] busy:timeavg 0.97778109585427
+scalar EmergencyResponse.ambulance_array[3] busy:timeavg 0.97621936975248
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[4] busy:timeavg 0.9761017509581
+scalar EmergencyResponse.ambulance_array[4] busy:timeavg 0.97525568918288
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[5] busy:timeavg 0.97934868552343
+scalar EmergencyResponse.ambulance_array[5] busy:timeavg 0.97265336402744
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[6] busy:timeavg 0.9726231142774
+scalar EmergencyResponse.ambulance_array[6] busy:timeavg 0.97401675242985
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[7] busy:timeavg 0.97048550671859
+scalar EmergencyResponse.ambulance_array[7] busy:timeavg 0.97153974673144
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[8] busy:timeavg 0.9693623084204
+scalar EmergencyResponse.ambulance_array[8] busy:timeavg 0.97418197355249
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[9] busy:timeavg 0.97382396176306
+scalar EmergencyResponse.ambulance_array[9] busy:timeavg 0.96806209324599
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[10] busy:timeavg 0.97369653460826
+scalar EmergencyResponse.ambulance_array[10] busy:timeavg 0.97042756330667
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[11] busy:timeavg 0.96662263504104
+scalar EmergencyResponse.ambulance_array[11] busy:timeavg 0.97035644426044
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[12] busy:timeavg 0.96536364371714
+scalar EmergencyResponse.ambulance_array[12] busy:timeavg 0.96885263326223
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[13] busy:timeavg 0.96614879639641
+scalar EmergencyResponse.ambulance_array[13] busy:timeavg 0.97120304759769
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[14] busy:timeavg 0.96047545628372
+scalar EmergencyResponse.ambulance_array[14] busy:timeavg 0.96323452284858
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[15] busy:timeavg 0.95914552770743
+scalar EmergencyResponse.ambulance_array[15] busy:timeavg 0.96871149474494
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[16] busy:timeavg 0.95935789690044
+scalar EmergencyResponse.ambulance_array[16] busy:timeavg 0.96149577429811
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[17] busy:timeavg 0.95786319625634
+scalar EmergencyResponse.ambulance_array[17] busy:timeavg 0.96378465521753
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[18] busy:timeavg 0.95062121506843
+scalar EmergencyResponse.ambulance_array[18] busy:timeavg 0.96085606703025
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[19] busy:timeavg 0.95565792450544
+scalar EmergencyResponse.ambulance_array[19] busy:timeavg 0.95490425582595
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[20] busy:timeavg 0.94806127697948
+scalar EmergencyResponse.ambulance_array[20] busy:timeavg 0.95084194033635
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[21] busy:timeavg 0.95554898151022
+scalar EmergencyResponse.ambulance_array[21] busy:timeavg 0.95087693179705
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[22] busy:timeavg 0.95139607586352
+scalar EmergencyResponse.ambulance_array[22] busy:timeavg 0.94475850012006
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[23] busy:timeavg 0.94373385398531
+scalar EmergencyResponse.ambulance_array[23] busy:timeavg 0.94801229714645
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[24] busy:timeavg 0.93817568203049
+scalar EmergencyResponse.ambulance_array[24] busy:timeavg 0.94527063422435
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[25] busy:timeavg 0.93652102200522
+scalar EmergencyResponse.ambulance_array[25] busy:timeavg 0.93558750790219
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[26] busy:timeavg 0.93663911798157
+scalar EmergencyResponse.ambulance_array[26] busy:timeavg 0.93064200380631
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[27] busy:timeavg 0.91794824865722
+scalar EmergencyResponse.ambulance_array[27] busy:timeavg 0.92946612399061
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[28] busy:timeavg 0.92896832223988
+scalar EmergencyResponse.ambulance_array[28] busy:timeavg 0.92849615053093
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[29] busy:timeavg 0.91756432876622
+scalar EmergencyResponse.ambulance_array[29] busy:timeavg 0.92753669031672
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[30] busy:timeavg 0.91807201598365
+scalar EmergencyResponse.ambulance_array[30] busy:timeavg 0.91868443209332
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[31] busy:timeavg 0.9136725174219
+scalar EmergencyResponse.ambulance_array[31] busy:timeavg 0.91334185345857
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[32] busy:timeavg 0.91355385240094
+scalar EmergencyResponse.ambulance_array[32] busy:timeavg 0.90444655883724
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[33] busy:timeavg 0.89775560462546
+scalar EmergencyResponse.ambulance_array[33] busy:timeavg 0.90380603271613
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[34] busy:timeavg 0.8811505927941
+scalar EmergencyResponse.ambulance_array[34] busy:timeavg 0.90364876816302
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[35] busy:timeavg 0.88858977163142
+scalar EmergencyResponse.ambulance_array[35] busy:timeavg 0.88742023449552
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[36] busy:timeavg 0.87033000462093
+scalar EmergencyResponse.ambulance_array[36] busy:timeavg 0.87661695711431
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[37] busy:timeavg 0.8725601559945
+scalar EmergencyResponse.ambulance_array[37] busy:timeavg 0.87895443488665
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[38] busy:timeavg 0.84996241932541
+scalar EmergencyResponse.ambulance_array[38] busy:timeavg 0.85821287387098
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[39] busy:timeavg 0.82898404672097
+scalar EmergencyResponse.ambulance_array[39] busy:timeavg 0.85788432884434
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[40] busy:timeavg 0.83746319903466
+scalar EmergencyResponse.ambulance_array[40] busy:timeavg 0.81890897375676
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[41] busy:timeavg 0.80929940008436
+scalar EmergencyResponse.ambulance_array[41] busy:timeavg 0.82406199893436
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[42] busy:timeavg 0.79977541789445
+scalar EmergencyResponse.ambulance_array[42] busy:timeavg 0.81623906294348
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[43] busy:timeavg 0.78869705779396
+scalar EmergencyResponse.ambulance_array[43] busy:timeavg 0.7883551297141
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[44] busy:timeavg 0.74738355114367
+scalar EmergencyResponse.ambulance_array[44] busy:timeavg 0.78881382212108
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[45] busy:timeavg 0.75771837575258
+scalar EmergencyResponse.ambulance_array[45] busy:timeavg 0.77027406505303
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[46] busy:timeavg 0.71836469910258
+scalar EmergencyResponse.ambulance_array[46] busy:timeavg 0.71410663045992
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[47] busy:timeavg 0.73415086079008
+scalar EmergencyResponse.ambulance_array[47] busy:timeavg 0.74497408666508
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[48] busy:timeavg 0.66472002683158
+scalar EmergencyResponse.ambulance_array[48] busy:timeavg 0.69146705792951
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[49] busy:timeavg 0.65277713159714
+scalar EmergencyResponse.ambulance_array[49] busy:timeavg 0.65104729487261
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[50] busy:timeavg 0.60681759254938
+scalar EmergencyResponse.ambulance_array[50] busy:timeavg 0.65464093550887
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[51] busy:timeavg 0.59023180992767
+scalar EmergencyResponse.ambulance_array[51] busy:timeavg 0.60141997892562
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[52] busy:timeavg 0.56107086633181
+scalar EmergencyResponse.ambulance_array[52] busy:timeavg 0.57616299869928
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[53] busy:timeavg 0.4982378318533
+scalar EmergencyResponse.ambulance_array[53] busy:timeavg 0.54995192009776
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[54] busy:timeavg 0.49699931426924
+scalar EmergencyResponse.ambulance_array[54] busy:timeavg 0.50307371737027
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[55] busy:timeavg 0.4834996100803
+scalar EmergencyResponse.ambulance_array[55] busy:timeavg 0.48675903700177
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[56] busy:timeavg 0.43361697938685
+scalar EmergencyResponse.ambulance_array[56] busy:timeavg 0.43892744042517
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[57] busy:timeavg 0.39978940835255
+scalar EmergencyResponse.ambulance_array[57] busy:timeavg 0.40050377217006
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[58] busy:timeavg 0.37024168309712
+scalar EmergencyResponse.ambulance_array[58] busy:timeavg 0.36813628042394
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
-scalar EmergencyResponse.ambulance_array[59] busy:timeavg 0.33424750107669
+scalar EmergencyResponse.ambulance_array[59] busy:timeavg 0.36886350009746
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar EmergencyResponse.ambulance_array[60] busy:timeavg 0.27981365658592
 attr interpolationmode sample-hold
 attr title "server busy state, timeavg"
 

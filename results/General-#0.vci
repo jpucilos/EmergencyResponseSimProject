@@ -1,15 +1,15 @@
-file 1728288 1524682432                                         
+file 1790328 1524679049                                         
 version 2
-run General-0-20180425-14:53:36-13588
+run General-0-20180425-13:57:18-11132
 attr configname General
-attr datetime 20180425-14:53:36
+attr datetime 20180425-13:57:18
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network EmergencyResponse
-attr processid 13588
+attr processid 11132
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -19,7 +19,7 @@ param **.NYC_calls.interArrivalTime exponential(20s)
 param **.responder_array[*].serviceTime exponential(60s)
 param **.ambulance_array[*].serviceTime exponential(1020s)
 param **.c1 6
-param **.c2 60
+param **.c2 61
 param **.NYC_calls.stopTime 604800s
 
 vector 0 EmergencyResponse.ambulance_queue queueLength:vector ETV
@@ -32,7 +32,7 @@ vector 2 EmergencyResponse.Hospital lifeTime:vector ETV
 attr interpolationmode none
 attr title "lifetime of arrived jobs, vector"
 attr unit s
-0	1038 196501 0 239111 0 600322.956638053828 6267 0 22 25181 182949
-1	197539 170782 0 240865 0 604747.727114171569 5463 0 8 6951 17027
-2	368321 1359965 80 241009 354.92551935819 608574.226105401053 30126 2.518157489265 12635.615833516 32415199.556216 66146647257.818
+0	1038 244168 0 242949 0 604937.927051654733 7759 0 29 43557 441779
+1	245206 173400 0 242738 0 604331.236284520473 5543 0 11 7637 21511
+2	418606 1371720 80 243073 354.92551935819 608507.223043846986 30384 2.518157489265 12635.615833516 33005179.778485 67511501343.791
 
