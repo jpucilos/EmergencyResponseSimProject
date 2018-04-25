@@ -1,79 +1,26 @@
-file 102273 1524117358                                          
+file 1728288 1524682432                                         
 version 2
-run General-0-20180419-01:55:10-8252
+run General-0-20180425-14:53:36-13588
 attr configname General
-attr datetime 20180419-01:55:10
+attr datetime 20180425-14:53:36
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network EmergencyResponse
-attr processid 8252
+attr processid 13588
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
 param **.NYC_calls.interArrivalTime exponential(20s)
-param **.NYC_calls.numJobs 1000
-param **.responder1.serviceTime exponential(60s)
-param **.responder2.serviceTime exponential(60s)
-param **.responder3.serviceTime exponential(60s)
-param **.ambulance1.serviceTime exponential(1020s)
-param **.ambulance2.serviceTime exponential(1020s)
-param **.ambulance3.serviceTime exponential(1020s)
-param **.ambulance4.serviceTime exponential(1020s)
-param **.ambulance5.serviceTime exponential(1020s)
-param **.ambulance6.serviceTime exponential(1020s)
-param **.ambulance7.serviceTime exponential(1020s)
-param **.ambulance8.serviceTime exponential(1020s)
-param **.ambulance9.serviceTime exponential(1020s)
-param **.ambulance10.serviceTime exponential(1020s)
-param **.ambulance11.serviceTime exponential(1020s)
-param **.ambulance12.serviceTime exponential(1020s)
-param **.ambulance13.serviceTime exponential(1020s)
-param **.ambulance14.serviceTime exponential(1020s)
-param **.ambulance15.serviceTime exponential(1020s)
-param **.ambulance16.serviceTime exponential(1020s)
-param **.ambulance17.serviceTime exponential(1020s)
-param **.ambulance18.serviceTime exponential(1020s)
-param **.ambulance19.serviceTime exponential(1020s)
-param **.ambulance20.serviceTime exponential(1020s)
-param **.ambulance21.serviceTime exponential(1020s)
-param **.ambulance22.serviceTime exponential(1020s)
-param **.ambulance23.serviceTime exponential(1020s)
-param **.ambulance24.serviceTime exponential(1020s)
-param **.ambulance25.serviceTime exponential(1020s)
-param **.ambulance26.serviceTime exponential(1020s)
-param **.ambulance27.serviceTime exponential(1020s)
-param **.ambulance28.serviceTime exponential(1020s)
-param **.ambulance29.serviceTime exponential(1020s)
-param **.ambulance30.serviceTime exponential(1020s)
-param **.ambulance31.serviceTime exponential(1020s)
-param **.ambulance32.serviceTime exponential(1020s)
-param **.ambulance33.serviceTime exponential(1020s)
-param **.ambulance34.serviceTime exponential(1020s)
-param **.ambulance35.serviceTime exponential(1020s)
-param **.ambulance36.serviceTime exponential(1020s)
-param **.ambulance37.serviceTime exponential(1020s)
-param **.ambulance38.serviceTime exponential(1020s)
-param **.ambulance39.serviceTime exponential(1020s)
-param **.ambulance40.serviceTime exponential(1020s)
-param **.ambulance41.serviceTime exponential(1020s)
-param **.ambulance42.serviceTime exponential(1020s)
-param **.ambulance43.serviceTime exponential(1020s)
-param **.ambulance44.serviceTime exponential(1020s)
-param **.ambulance45.serviceTime exponential(1020s)
-param **.ambulance46.serviceTime exponential(1020s)
-param **.ambulance47.serviceTime exponential(1020s)
-param **.ambulance48.serviceTime exponential(1020s)
-param **.ambulance49.serviceTime exponential(1020s)
-param **.ambulance50.serviceTime exponential(1020s)
-param **.ambulance51.serviceTime exponential(1020s)
-param **.ambulance52.serviceTime exponential(1020s)
-param **.ambulance53.serviceTime exponential(1020s)
-param **.ambulance54.serviceTime exponential(1020s)
+param **.responder_array[*].serviceTime exponential(60s)
+param **.ambulance_array[*].serviceTime exponential(1020s)
+param **.c1 6
+param **.c2 60
+param **.NYC_calls.stopTime 604800s
 
 vector 0 EmergencyResponse.ambulance_queue queueLength:vector ETV
 attr interpolationmode sample-hold
@@ -85,7 +32,7 @@ vector 2 EmergencyResponse.Hospital lifeTime:vector ETV
 attr interpolationmode none
 attr title "lifetime of arrived jobs, vector"
 attr unit s
-0	3886 6419 0 7840 0 21354.251183591462 223 0 12 973 6439
-1	10305 49694 0 7877 0 21561.707348345359 1739 0 27 12105 134713
-2	59999 42272 79 8001 354.92551935819 26787.610643570127 1000 38.961931870477 6603.4652265524 1218323.1387726 2560829647.4874
+0	1038 196501 0 239111 0 600322.956638053828 6267 0 22 25181 182949
+1	197539 170782 0 240865 0 604747.727114171569 5463 0 8 6951 17027
+2	368321 1359965 80 241009 354.92551935819 608574.226105401053 30126 2.518157489265 12635.615833516 32415199.556216 66146647257.818
 
